@@ -1,0 +1,190 @@
+body {
+  background-color: #5e875a;
+  font-family: 'Space Mono', monospace;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #CBD18F;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #5e875a;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+
+.hamburgerwrapper {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  background-color: #E3B448;
+  height: 60px;
+}
+
+.hamburger {
+  color: white;
+  padding-left: 10px;
+  font-size: 30px;
+  cursor: pointer;
+  text-align: left;
+}
+
+.hamburger :hover {
+  color: #5e875a;
+}
+
+.hoofdtext-wrapper {
+  flex: 1;
+  text-align: center;
+}
+
+.hoofdtext {
+  font-size: 30px;
+  color: white;
+  margin: 0;
+}
+
+.introtext {
+  padding-left: 20px;
+  color: white;
+  font-weight: bold;
+  font-size: 55px;
+}
+
+.ikbentoon {
+  padding-left: 15px;
+  padding-right: 30px;
+}
+
+.populairefilmpjes {
+  padding-left: 30px;
+  color: white;
+  font-weight: bold;
+  font-size: 35px;
+}
+
+.videoone {
+  padding-left: 30px;
+  width: 430px;
+  height: 314px;
+}
+
+footer {
+  background-color: #CBD18F;
+  color: #5e875a;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer-row {
+  flex: 1;
+  padding: 10px;
+}
+
+h3 {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 5px;
+}
+
+a {
+  color: #5e875a;
+  text-decoration: none;
+  font-size: 25px;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+@keyframes wave {
+  from, to {
+    transform: translate(-50%, 0%);
+  }
+  
+  50% {
+    transform: translate(-50%, -20%);
+  }
+}
+
+body {
+  margin: 0px;
+}
+
+#bubble-wrapper {
+  height: 100%;
+  width: 100%;
+  
+  position: fixed;
+  bottom: 0px;
+  
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.bubble {
+  height: max(300px, 30vw);
+  width: max(300px, 30vw);
+  
+  background-color: #E3B448;  
+  border-radius: 100%;
+  
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  
+  animation: wave 2s ease-in-out infinite;
+}
+
+@media(prefers-reduced-motion) {
+  .bubble {
+    animation: none;
+    display: none;
+  }
+}
+
+
